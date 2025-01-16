@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
+      /* text-align: center; */
       margin: 20px;
     }
     canvas {
@@ -40,13 +40,15 @@
   </style>
 </head>
 <body>
-  <h1>头像合成工具 - 支持橡皮擦</h1>
-  <input type="file" id="uploadInput" accept="image/*">
+  <h1>Mango头像合成工具</h1>
+  <div style="margin-bottom: 10px;">
+    <input type="file" id="uploadInput" accept="image/*">
+  </div>
   <div id="toolbar">
     <button id="eraserBtn">开启橡皮擦</button>
     <button id="downloadBtn">下载合成头像</button>
   </div>
-  <canvas id="canvas" width="768" height="768"></canvas>
+    <canvas id="canvas" width="768" height="768"></canvas>
 
   <script>
     const uploadInput = document.getElementById('uploadInput');
